@@ -1,0 +1,227 @@
+$purple: #0e0d31
+$fade-gray: rgb(44,50,61)
+$fade-white: rgb(193, 194, 198)
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Poppins'
+
+.joinOuterContainer
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    width: 100%
+
+.logoContainer
+    width: 30%
+    height: 100vh
+    background: $purple
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 0 30px
+
+    i
+        font-size: 50px
+        color: white
+        margin-bottom: 30px
+    h1
+        font-size: 40px
+        color: white
+        margin-bottom: 30px
+    p
+        color: #c5c5c5be
+        line-height: 25px
+        margin-bottom: 30px
+    button
+        background: $fade-gray
+        color: white
+        border: none
+        border-radius: 5px
+        padding: 10px 20px
+
+.joinContainer
+    width: 70%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    label
+        align-self: flex-start
+        font-weight: bold
+
+    .input
+        width: 60%
+
+        input
+            margin-top: 20px
+            width: 100%
+            margin-bottom: 30px
+            height: 50px
+            padding-left: 20px
+            border: 1px solid $fade-gray
+            background: none
+            border-radius: 5px
+
+    .button-container
+        margin-top: 50px
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+
+        button
+            width: 60%
+            height: 50px
+            border-radius: 5px
+            border: none
+            font-weight: bold
+            color: white
+            background: $purple
+            cursor: pointer
+
+.outer-container
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    width: 100%
+
+.info-container
+    width: 30%
+    height: 100vh
+    background: $purple
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 0 30px
+
+    i
+        font-size: 50px
+        color: white
+        margin-bottom: 30px
+    h1
+        font-size: 40px
+        color: white
+        margin-bottom: 30px
+    p
+        color: #c5c5c5be
+        line-height: 25px
+        margin-bottom: 30px
+    button
+        background: $fade-gray
+        color: white
+        border: none
+        border-radius: 5px
+        padding: 10px 20px
+
+.chat-container
+    width: 70%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+
+.info-bar
+    width: 100%
+    height: 10vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 40px
+
+    a
+        font-size: 24px
+        a:hover
+            cursor: pointer
+.chat-box
+    width: 100%
+    height: 80vh
+    background: #d8d8d8
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    padding: 50px
+
+    .message-container
+        width: 100%
+        display: flex
+
+    .user-sent
+        color: white
+        justify-content: flex-end
+    .not-user
+        align-self: flex-start
+
+.message
+    border-radius: 15px
+    padding: 20px 40px
+    background: white
+    margin: 10px 0
+
+.send
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    height: 10vh
+
+    input
+        height: 9vh
+        width: 80%
+        padding-left: 50px
+        border: none
+        background: none
+        outline: none
+
+    button
+        width: 20%
+        background: none
+        border: none
+        font-weight: bold
+        cursor: pointer
+
+.bgp
+    background: $purple
+
+@media only screen and (max-width: 800px)
+    .joinOuterContainer
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+
+    .logoContainer
+        height: 40vh
+        width: 100%
+
+        i
+            font-size: 30px
+            margin-bottom: 10px
+        h1
+            font-size: 24px
+            margin-bottom: 10px
+        p
+            font-size: 18px
+            text-align: center
+
+    .joinContainer
+        height: 60vh
+        width: 100%
+
+    .info-container
+        display: none
+
+    .chat-container
+        width: 100%
